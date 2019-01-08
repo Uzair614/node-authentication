@@ -1,0 +1,5 @@
+<form [formGroup]="signInForm" (ngSubmit)="signInUser()">
+  <input type="text" formControlName="username" />
+  <input type="password" formControlName="password" />
+  <button [disabled]="signInForm.invalid" type="submit">Sign In</button>
+</form>
